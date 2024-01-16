@@ -1,0 +1,42 @@
+call plug#begin()
+
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'glepnir/dashboard-nvim'
+
+call plug#end()
+
+let mapleader = ' '
+
+set autochdir
+set autoindent
+set cursorline
+set expandtab
+set hidden
+set hlsearch
+set ignorecase
+set incsearch
+set number
+set relativenumber
+set ruler
+set shiftwidth=4
+set smarttab
+set tabstop=4
+
+nnoremap <C-j> 10jzz
+nnoremap <C-k> 10kzz
+nnoremap <Leader>l :set list!<CR>
+nnoremap <Leader>w :w<CR>
+nnoremap <S-Enter> O<Esc>
+nnoremap <S-left> :bp<CR>
+nnoremap <S-right> :bn<CR>
+nnoremap <silent> + :vert resize +2<CR>
+nnoremap <silent> - :resize -2<CR>
+nnoremap <silent> = :resize +2<CR>
+nnoremap <silent> _ :vert resize -2<CR>
+nnoremap <Leader>ve :e $MYVIMRC<CR>
+nnoremap <Leader>vs :w<CR>:source $MYVIMRC<CR>
+noremap <C-h> :bprevious<CR>
+noremap <C-l> :bnext<CR>
+noremap <C-t> :tabnew
+noremap j gj
+noremap k gk
